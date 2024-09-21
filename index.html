@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="manifest" href="/manifest.json">
+  <title>Roteiros Turísticos de Recife</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindos ao RoteirosPE!</h1>
+  </header>
+  
+  <main>
+    <section id="localizacao">
+      <h2>Pontos turísticos próximos</h2>
+      <p id="status">Obtendo sua localização...</p>
+      <ul id="lugares"></ul>
+    </section>
+
+    <section id="camera">
+      <h2>Tire uma foto do ponto turístico</h2>
+      <button id="capturarFoto">Abrir Câmera</button>
+      <video id="cameraVideo" autoplay></video>
+      <canvas id="cameraCanvas"></canvas>
+      <button id="tirarFoto" hidden>Tirar Foto</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
